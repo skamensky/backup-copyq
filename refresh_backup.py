@@ -1,12 +1,12 @@
 import os
-import subprocess
-from subprocess import PIPE
-import traceback
-import sys
 import re
+import sqlite3
+import subprocess
+import sys
+import traceback
 from datetime import datetime
 from pathlib import Path
-import sqlite3
+from subprocess import PIPE
 
 storage_file = Path(Path(__file__).parent, "history.sqlite").absolute()
 
