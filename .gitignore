@@ -1,0 +1,7 @@
+history.sqlite
+.idea
+venv
+history.sqlite-journal
+stderr.log
+stdout.log
+__pycache__
