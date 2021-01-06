@@ -86,6 +86,12 @@ def run_backup():
 
 
 def search(search_query):
+    if not storage_file.exists():
+        print(
+            "You must run the backup at least once before trying to search",
+            file=sys.stderr,
+        )
+        sys.exit(1)
     connection = sqlite3.connect(str(storage_file))
     cursor = connection.cursor()
     cursor.execute(
